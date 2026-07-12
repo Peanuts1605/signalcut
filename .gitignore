@@ -6,3 +6,6 @@ __pycache__/
 *.pyc
 .env
 artifacts/
+node_modules/
+render/threadloom-preview/public/evidence/
+render/threadloom-preview/src/storyboard.generated.json

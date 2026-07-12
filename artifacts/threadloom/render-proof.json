@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "video": "signalcut_threadloom_outcome_first.mp4",
+  "video_sha256": "9639e622a5e44ef04ebb9b9e90557f4f71fc30a12660faf7deb2e993a8f1b882",
+  "size_bytes": 21674424,
+  "codec": "h264",
+  "width": 1920,
+  "height": 1080,
+  "fps": "30/1",
+  "duration_seconds": 55.061333,
+  "storyboard_duration_ms": 55000,
+  "scene_count": 6,
+  "strategy": "outcome_first",
+  "manifest_hash": "741d03c7b820f1235b307d47b4821c2269b3dab6dd013c64692666aec383c99e"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "signalcut-threadloom-preview",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "sync": "node scripts/sync-proof.mjs",
+    "test": "node --test scripts/sync-proof.test.mjs",
+    "lint": "npm run sync && eslint src scripts && tsc",
+    "studio": "npm run sync && remotion studio src/index.ts",
+    "render": "npm run sync && remotion render src/index.ts ThreadloomSignalCut ../../artifacts/threadloom/signalcut_threadloom_outcome_first.mp4 --codec=h264 --crf=18",
+    "verify-render": "node scripts/verify-render.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.489",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.489"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.489",
+    "@types/node": "25.0.10",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.19.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  }
+}
