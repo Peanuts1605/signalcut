@@ -1,0 +1,24 @@
+{
+  "name": "signalcut-review-desk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-review.mjs",
+    "dev": "npm run sync && vite --host 127.0.0.1",
+    "build": "npm run sync && tsc -b && vite build",
+    "check": "npm run build"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "latest",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "@types/react-dom": "latest",
+    "typescript": "5.9.3"
+  }
+}

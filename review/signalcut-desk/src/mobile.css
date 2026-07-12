@@ -1,0 +1,87 @@
+ .workspace {
+  padding: 18px 24px;
+}
+
+.timeline button {
+  height: 145px;
+  grid-template-rows: auto 62px 1fr;
+}
+
+.timeline img {
+  height: 62px;
+}
+
+.timeline strong {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.review-url {
+  margin-left: auto;
+  color: #56666a;
+  font: 12px ui-monospace, monospace;
+}
+
+.full-hash {
+  display: block;
+  max-width: 720px;
+  margin-top: 12px;
+  padding: 12px;
+  overflow-wrap: anywhere;
+  border: 1px solid #d5d9d5;
+  background: #fff;
+}
+
+@media (max-width: 700px) {
+  .shell {
+    display: block;
+  }
+
+  .shell > aside {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  header strong {
+    font-size: 14px;
+  }
+
+  .share {
+    padding: 8px;
+    font-size: 0;
+  }
+
+  .workspace {
+    min-width: 0;
+    padding: 12px;
+  }
+
+  .preview {
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .screen {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .screen video {
+    max-width: 100%;
+  }
+
+  .timeline {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+  }
+}
