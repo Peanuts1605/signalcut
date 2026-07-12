@@ -2,15 +2,18 @@ from __future__ import annotations
 
 import hashlib
 import json
+from pathlib import Path
 
 from signalcut.models import (
     ClarityFinding,
     EvidenceAsset,
     EvidencePurpose,
     ProjectBrief,
+    RenderStoryboard,
     SelectionReceipt,
     StoryBeat,
     StoryManifest,
+    StoryboardScene,
     StoryStrategy,
 )
 
@@ -163,4 +166,39 @@ def select_candidate(
         clarity_score=score,
         findings=findings,
         decision="READY" if score == len(EvidencePurpose) else "REVIEW",
+    )
+
+
+def build_storyboard(
+    project: ProjectBrief,
+    receipt: SelectionReceipt,
+    candidates: list[StoryManifest],
+    asset_paths: dict[str, Path],
+) -> RenderStoryboard:
+    selected = next(
+        (
+            candidate
+            for candidate in candidates
+            if candidate.manifest_hash == receipt.selected_manifest_hash
+        ),
+        None,
+    )
+    if selected is None:
+        raise ValueError("selected manifest is missing from story candidates")
+    scenes = [
+        StoryboardScene(
+            purpose=beat.purpose,
+            source_asset_ids=beat.source_asset_ids,
+            source_paths=[asset_paths[asset_id] for asset_id in beat.source_asset_ids],
+            headline=beat.headline,
+            duration_ms=beat.duration_ms,
+        )
+        for beat in selected.beats
+    ]
+    return RenderStoryboard(
+        project_name=project.name,
+        strategy=selected.strategy,
+        manifest_hash=selected.manifest_hash,
+        total_duration_ms=selected.total_duration_ms,
+        scenes=scenes,
     )

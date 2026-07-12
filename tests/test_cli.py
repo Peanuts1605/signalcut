@@ -18,4 +18,14 @@ def test_threadloom_story_proof(tmp_path: Path) -> None:
     assert receipt["decision"] == "READY"
     evidence = json.loads((tmp_path / "evidence-manifest.json").read_text())
     assert all(not Path(item["local_path"]).is_absolute() for item in evidence)
+    storyboard = json.loads((tmp_path / "storyboard.json").read_text())
+    assert storyboard["strategy"] == "outcome_first"
+    assert storyboard["total_duration_ms"] == 55_000
+    assert len(storyboard["scenes"]) == 6
+    assert all(scene["source_paths"] for scene in storyboard["scenes"])
+    assert all(
+        not Path(path).is_absolute()
+        for scene in storyboard["scenes"]
+        for path in scene["source_paths"]
+    )
     assert (tmp_path / "DECISION.md").exists()

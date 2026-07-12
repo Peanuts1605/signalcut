@@ -1,0 +1,76 @@
+{
+  "manifest_hash": "741d03c7b820f1235b307d47b4821c2269b3dab6dd013c64692666aec383c99e",
+  "project_name": "Threadloom",
+  "scenes": [
+    {
+      "duration_ms": 9167,
+      "headline": "The community weaves one result together.",
+      "purpose": "outcome",
+      "source_asset_ids": [
+        "asset-7cead331fc67"
+      ],
+      "source_paths": [
+        "evidence/mobile-woven.png"
+      ]
+    },
+    {
+      "duration_ms": 9167,
+      "headline": "One weak move can fray the shared pattern.",
+      "purpose": "pain",
+      "source_asset_ids": [
+        "asset-2f13c2be079a"
+      ],
+      "source_paths": [
+        "evidence/mobile-frayed.png"
+      ]
+    },
+    {
+      "duration_ms": 9167,
+      "headline": "One shared daily loom.",
+      "purpose": "promise",
+      "source_asset_ids": [
+        "asset-84dbc7850536"
+      ],
+      "source_paths": [
+        "evidence/live-feed.jpg"
+      ]
+    },
+    {
+      "duration_ms": 9167,
+      "headline": "Four moves. One collective choice.",
+      "purpose": "workflow",
+      "source_asset_ids": [
+        "asset-a905405b8e97"
+      ],
+      "source_paths": [
+        "evidence/how-to.jpg"
+      ]
+    },
+    {
+      "duration_ms": 9166,
+      "headline": "The accepted stitch becomes shared state.",
+      "purpose": "proof",
+      "source_asset_ids": [
+        "asset-3298badac237",
+        "asset-75ccb40d6b7a"
+      ],
+      "source_paths": [
+        "evidence/second-view.jpg",
+        "evidence/accepted-stitch.jpg"
+      ]
+    },
+    {
+      "duration_ms": 9166,
+      "headline": "Play on r/threadloom_daily_dev",
+      "purpose": "cta",
+      "source_asset_ids": [
+        "asset-83c5e7f0bcbc"
+      ],
+      "source_paths": [
+        "evidence/persisted-feed.jpg"
+      ]
+    }
+  ],
+  "strategy": "outcome_first",
+  "total_duration_ms": 55000
+}

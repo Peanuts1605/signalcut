@@ -90,3 +90,35 @@ class SelectionReceipt(BaseModel):
     clarity_score: int = Field(ge=0, le=6)
     findings: list[ClarityFinding] = Field(min_length=6, max_length=6)
     decision: str
+
+
+class StoryboardScene(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    purpose: EvidencePurpose
+    source_asset_ids: list[str] = Field(min_length=1)
+    source_paths: list[Path] = Field(min_length=1)
+    headline: str = Field(min_length=1, max_length=100)
+    duration_ms: int = Field(ge=3_000, le=12_000)
+
+    @model_validator(mode="after")
+    def source_paths_are_portable(self) -> StoryboardScene:
+        if any(path.is_absolute() for path in self.source_paths):
+            raise ValueError("storyboard source paths must be project-relative")
+        return self
+
+
+class RenderStoryboard(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    project_name: str = Field(min_length=1)
+    strategy: StoryStrategy
+    manifest_hash: str = Field(pattern=r"^[0-9a-f]{64}$")
+    total_duration_ms: int = Field(ge=45_000, le=60_000)
+    scenes: list[StoryboardScene] = Field(min_length=1, max_length=7)
+
+    @model_validator(mode="after")
+    def duration_matches_scenes(self) -> RenderStoryboard:
+        if self.total_duration_ms != sum(scene.duration_ms for scene in self.scenes):
+            raise ValueError("total_duration_ms must match storyboard scenes")
+        return self

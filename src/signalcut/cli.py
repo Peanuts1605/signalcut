@@ -6,7 +6,7 @@ from typing import Any
 
 import typer
 
-from signalcut.editorial import build_candidates, select_candidate
+from signalcut.editorial import build_candidates, build_storyboard, select_candidate
 from signalcut.evidence import ingest_image
 from signalcut.models import EvidencePurpose, ProjectBrief
 
@@ -48,6 +48,15 @@ def story(
     ]
     candidates = build_candidates(project, assets)
     receipt = select_candidate(project, assets, candidates)
+    storyboard = build_storyboard(
+        project,
+        receipt,
+        candidates,
+        {
+            asset.id: Path(item["path"])
+            for asset, item in zip(assets, source["evidence"], strict=True)
+        },
+    )
 
     out.mkdir(parents=True, exist_ok=True)
     _write_json(
@@ -62,6 +71,7 @@ def story(
         [candidate.model_dump(mode="json") for candidate in candidates],
     )
     _write_json(out / "selection-receipt.json", receipt.model_dump(mode="json"))
+    _write_json(out / "storyboard.json", storyboard.model_dump(mode="json"))
     (out / "DECISION.md").write_text(
         "\n".join(
             [
