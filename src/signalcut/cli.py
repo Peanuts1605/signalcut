@@ -77,8 +77,7 @@ def story(
         )
     )
     typer.echo(
-        f"{receipt.decision} {receipt.selected_strategy.value} "
-        f"{receipt.selected_manifest_hash}"
+        f"{receipt.decision} {receipt.selected_strategy.value} {receipt.selected_manifest_hash}"
     )
 
 
