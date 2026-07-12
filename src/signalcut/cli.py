@@ -52,7 +52,10 @@ def story(
     out.mkdir(parents=True, exist_ok=True)
     _write_json(
         out / "evidence-manifest.json",
-        [asset.model_dump(mode="json") for asset in assets],
+        [
+            asset.model_dump(mode="json") | {"local_path": item["path"]}
+            for asset, item in zip(assets, source["evidence"], strict=True)
+        ],
     )
     _write_json(
         out / "story-candidates.json",

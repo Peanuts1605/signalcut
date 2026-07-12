@@ -16,4 +16,6 @@ def test_threadloom_story_proof(tmp_path: Path) -> None:
     assert receipt["project_name"] == "Threadloom"
     assert receipt["clarity_score"] == 6
     assert receipt["decision"] == "READY"
+    evidence = json.loads((tmp_path / "evidence-manifest.json").read_text())
+    assert all(not Path(item["local_path"]).is_absolute() for item in evidence)
     assert (tmp_path / "DECISION.md").exists()
