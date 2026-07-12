@@ -1,0 +1,188 @@
+[
+  {
+    "beats": [
+      {
+        "duration_ms": 9167,
+        "headline": "The community weaves one result together.",
+        "narration": null,
+        "purpose": "outcome",
+        "source_asset_ids": [
+          "asset-7cead331fc67"
+        ]
+      },
+      {
+        "duration_ms": 9167,
+        "headline": "One weak move can fray the shared pattern.",
+        "narration": null,
+        "purpose": "pain",
+        "source_asset_ids": [
+          "asset-2f13c2be079a"
+        ]
+      },
+      {
+        "duration_ms": 9167,
+        "headline": "One shared daily loom.",
+        "narration": null,
+        "purpose": "promise",
+        "source_asset_ids": [
+          "asset-84dbc7850536"
+        ]
+      },
+      {
+        "duration_ms": 9167,
+        "headline": "Four moves. One collective choice.",
+        "narration": null,
+        "purpose": "workflow",
+        "source_asset_ids": [
+          "asset-a905405b8e97"
+        ]
+      },
+      {
+        "duration_ms": 9166,
+        "headline": "The accepted stitch becomes shared state.",
+        "narration": null,
+        "purpose": "proof",
+        "source_asset_ids": [
+          "asset-3298badac237",
+          "asset-75ccb40d6b7a"
+        ]
+      },
+      {
+        "duration_ms": 9166,
+        "headline": "Play on r/threadloom_daily_dev",
+        "narration": null,
+        "purpose": "cta",
+        "source_asset_ids": [
+          "asset-83c5e7f0bcbc"
+        ]
+      }
+    ],
+    "manifest_hash": "741d03c7b820f1235b307d47b4821c2269b3dab6dd013c64692666aec383c99e",
+    "strategy": "outcome_first",
+    "total_duration_ms": 55000
+  },
+  {
+    "beats": [
+      {
+        "duration_ms": 9167,
+        "headline": "One weak move can fray the shared pattern.",
+        "narration": null,
+        "purpose": "pain",
+        "source_asset_ids": [
+          "asset-2f13c2be079a"
+        ]
+      },
+      {
+        "duration_ms": 9167,
+        "headline": "Four moves. One collective choice.",
+        "narration": null,
+        "purpose": "workflow",
+        "source_asset_ids": [
+          "asset-a905405b8e97"
+        ]
+      },
+      {
+        "duration_ms": 9167,
+        "headline": "The accepted stitch becomes shared state.",
+        "narration": null,
+        "purpose": "proof",
+        "source_asset_ids": [
+          "asset-3298badac237",
+          "asset-75ccb40d6b7a"
+        ]
+      },
+      {
+        "duration_ms": 9167,
+        "headline": "The community weaves one result together.",
+        "narration": null,
+        "purpose": "outcome",
+        "source_asset_ids": [
+          "asset-7cead331fc67"
+        ]
+      },
+      {
+        "duration_ms": 9166,
+        "headline": "One shared daily loom.",
+        "narration": null,
+        "purpose": "promise",
+        "source_asset_ids": [
+          "asset-84dbc7850536"
+        ]
+      },
+      {
+        "duration_ms": 9166,
+        "headline": "Play on r/threadloom_daily_dev",
+        "narration": null,
+        "purpose": "cta",
+        "source_asset_ids": [
+          "asset-83c5e7f0bcbc"
+        ]
+      }
+    ],
+    "manifest_hash": "40454d52bb0a58744caa7682c56911a18789c18e351578eccca1e6348ccac062",
+    "strategy": "workflow_first",
+    "total_duration_ms": 55000
+  },
+  {
+    "beats": [
+      {
+        "duration_ms": 9167,
+        "headline": "The accepted stitch becomes shared state.",
+        "narration": null,
+        "purpose": "proof",
+        "source_asset_ids": [
+          "asset-3298badac237",
+          "asset-75ccb40d6b7a"
+        ]
+      },
+      {
+        "duration_ms": 9167,
+        "headline": "One weak move can fray the shared pattern.",
+        "narration": null,
+        "purpose": "pain",
+        "source_asset_ids": [
+          "asset-2f13c2be079a"
+        ]
+      },
+      {
+        "duration_ms": 9167,
+        "headline": "One shared daily loom.",
+        "narration": null,
+        "purpose": "promise",
+        "source_asset_ids": [
+          "asset-84dbc7850536"
+        ]
+      },
+      {
+        "duration_ms": 9167,
+        "headline": "Four moves. One collective choice.",
+        "narration": null,
+        "purpose": "workflow",
+        "source_asset_ids": [
+          "asset-a905405b8e97"
+        ]
+      },
+      {
+        "duration_ms": 9166,
+        "headline": "The community weaves one result together.",
+        "narration": null,
+        "purpose": "outcome",
+        "source_asset_ids": [
+          "asset-7cead331fc67"
+        ]
+      },
+      {
+        "duration_ms": 9166,
+        "headline": "Play on r/threadloom_daily_dev",
+        "narration": null,
+        "purpose": "cta",
+        "source_asset_ids": [
+          "asset-83c5e7f0bcbc"
+        ]
+      }
+    ],
+    "manifest_hash": "a5a7f9778fcb5f1ea5e0bf999e25193e5e34eca5258bcd208630581532838899",
+    "strategy": "proof_first",
+    "total_duration_ms": 55000
+  }
+]

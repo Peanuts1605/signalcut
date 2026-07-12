@@ -1,0 +1,16 @@
+{
+  "name": "Threadloom",
+  "promise": "One shared daily loom for an entire subreddit.",
+  "audience": "Reddit communities that enjoy daily cooperative games",
+  "cta": "Play on r/threadloom_daily_dev",
+  "max_duration_ms": 55000,
+  "evidence": [
+    {"path": "evidence/mobile-frayed.png", "purpose": "pain", "claim_ids": ["shared-risk"]},
+    {"path": "evidence/live-feed.jpg", "purpose": "promise", "claim_ids": ["shared-board"]},
+    {"path": "evidence/how-to.jpg", "purpose": "workflow", "claim_ids": ["four-moves"]},
+    {"path": "evidence/accepted-stitch.jpg", "purpose": "proof", "claim_ids": ["accepted-stitch"]},
+    {"path": "evidence/second-view.jpg", "purpose": "proof", "claim_ids": ["shared-state"]},
+    {"path": "evidence/mobile-woven.png", "purpose": "outcome", "claim_ids": ["woven-result"]},
+    {"path": "evidence/persisted-feed.jpg", "purpose": "cta", "claim_ids": ["public-playtest"]}
+  ]
+}

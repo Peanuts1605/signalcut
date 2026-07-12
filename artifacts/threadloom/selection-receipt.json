@@ -1,0 +1,61 @@
+{
+  "clarity_score": 6,
+  "decision": "READY",
+  "evidence_hashes": {
+    "asset-2f13c2be079a": "2f13c2be079a305a5c6ec5215a101c43f56e972205dff508bafab17c24c69d9d",
+    "asset-3298badac237": "3298badac237aa0df13317f1f383c5029dba057eb58916c7545cf246908d3b4d",
+    "asset-75ccb40d6b7a": "75ccb40d6b7abb21fbb1ec6eb89d1ade046ea5a7f41f52c4662a1f341a3924fa",
+    "asset-7cead331fc67": "7cead331fc679dca9423b6fc88e1050cf2d8ee9060222145fc478b2d5f413dab",
+    "asset-83c5e7f0bcbc": "83c5e7f0bcbcc47780687f62fe9f5595ae7f2bcca817266b3ad7e260dcbc7805",
+    "asset-84dbc7850536": "84dbc785053694a3ef5e4aa9046abad14433151eda307203728f32ce3b540a84",
+    "asset-a905405b8e97": "a905405b8e97ff19e01a3b84beeeec9381a3c270c623f6247e2160f9ac69b560"
+  },
+  "findings": [
+    {
+      "evidence_asset_ids": [
+        "asset-2f13c2be079a"
+      ],
+      "passed": true,
+      "question": "Can a judge identify the customer pain?"
+    },
+    {
+      "evidence_asset_ids": [
+        "asset-84dbc7850536"
+      ],
+      "passed": true,
+      "question": "Can a judge state the product promise?"
+    },
+    {
+      "evidence_asset_ids": [
+        "asset-a905405b8e97"
+      ],
+      "passed": true,
+      "question": "Can a judge understand how it works?"
+    },
+    {
+      "evidence_asset_ids": [
+        "asset-3298badac237",
+        "asset-75ccb40d6b7a"
+      ],
+      "passed": true,
+      "question": "Can a judge see trustworthy product proof?"
+    },
+    {
+      "evidence_asset_ids": [
+        "asset-7cead331fc67"
+      ],
+      "passed": true,
+      "question": "Can a judge identify the result?"
+    },
+    {
+      "evidence_asset_ids": [
+        "asset-83c5e7f0bcbc"
+      ],
+      "passed": true,
+      "question": "Can a judge identify the next step?"
+    }
+  ],
+  "project_name": "Threadloom",
+  "selected_manifest_hash": "741d03c7b820f1235b307d47b4821c2269b3dab6dd013c64692666aec383c99e",
+  "selected_strategy": "outcome_first"
+}

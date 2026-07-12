@@ -1,0 +1,93 @@
+[
+  {
+    "claim_ids": [
+      "shared-risk"
+    ],
+    "filename": "mobile-frayed.png",
+    "height": 844,
+    "id": "asset-2f13c2be079a",
+    "local_path": "/Users/alfredthebot/Documents/New project/signalcut/.worktrees/orion-signalcut-evidence-story/fixtures/threadloom/evidence/mobile-frayed.png",
+    "mime_type": "image/png",
+    "purpose": "pain",
+    "sha256": "2f13c2be079a305a5c6ec5215a101c43f56e972205dff508bafab17c24c69d9d",
+    "width": 390
+  },
+  {
+    "claim_ids": [
+      "shared-board"
+    ],
+    "filename": "live-feed.jpg",
+    "height": 783,
+    "id": "asset-84dbc7850536",
+    "local_path": "/Users/alfredthebot/Documents/New project/signalcut/.worktrees/orion-signalcut-evidence-story/fixtures/threadloom/evidence/live-feed.jpg",
+    "mime_type": "image/jpeg",
+    "purpose": "promise",
+    "sha256": "84dbc785053694a3ef5e4aa9046abad14433151eda307203728f32ce3b540a84",
+    "width": 1920
+  },
+  {
+    "claim_ids": [
+      "four-moves"
+    ],
+    "filename": "how-to.jpg",
+    "height": 900,
+    "id": "asset-a905405b8e97",
+    "local_path": "/Users/alfredthebot/Documents/New project/signalcut/.worktrees/orion-signalcut-evidence-story/fixtures/threadloom/evidence/how-to.jpg",
+    "mime_type": "image/jpeg",
+    "purpose": "workflow",
+    "sha256": "a905405b8e97ff19e01a3b84beeeec9381a3c270c623f6247e2160f9ac69b560",
+    "width": 1440
+  },
+  {
+    "claim_ids": [
+      "accepted-stitch"
+    ],
+    "filename": "accepted-stitch.jpg",
+    "height": 768,
+    "id": "asset-75ccb40d6b7a",
+    "local_path": "/Users/alfredthebot/Documents/New project/signalcut/.worktrees/orion-signalcut-evidence-story/fixtures/threadloom/evidence/accepted-stitch.jpg",
+    "mime_type": "image/jpeg",
+    "purpose": "proof",
+    "sha256": "75ccb40d6b7abb21fbb1ec6eb89d1ade046ea5a7f41f52c4662a1f341a3924fa",
+    "width": 1536
+  },
+  {
+    "claim_ids": [
+      "shared-state"
+    ],
+    "filename": "second-view.jpg",
+    "height": 768,
+    "id": "asset-3298badac237",
+    "local_path": "/Users/alfredthebot/Documents/New project/signalcut/.worktrees/orion-signalcut-evidence-story/fixtures/threadloom/evidence/second-view.jpg",
+    "mime_type": "image/jpeg",
+    "purpose": "proof",
+    "sha256": "3298badac237aa0df13317f1f383c5029dba057eb58916c7545cf246908d3b4d",
+    "width": 1536
+  },
+  {
+    "claim_ids": [
+      "woven-result"
+    ],
+    "filename": "mobile-woven.png",
+    "height": 844,
+    "id": "asset-7cead331fc67",
+    "local_path": "/Users/alfredthebot/Documents/New project/signalcut/.worktrees/orion-signalcut-evidence-story/fixtures/threadloom/evidence/mobile-woven.png",
+    "mime_type": "image/png",
+    "purpose": "outcome",
+    "sha256": "7cead331fc679dca9423b6fc88e1050cf2d8ee9060222145fc478b2d5f413dab",
+    "width": 390
+  },
+  {
+    "claim_ids": [
+      "public-playtest"
+    ],
+    "filename": "persisted-feed.jpg",
+    "height": 768,
+    "id": "asset-83c5e7f0bcbc",
+    "local_path": "/Users/alfredthebot/Documents/New project/signalcut/.worktrees/orion-signalcut-evidence-story/fixtures/threadloom/evidence/persisted-feed.jpg",
+    "mime_type": "image/jpeg",
+    "purpose": "cta",
+    "sha256": "83c5e7f0bcbcc47780687f62fe9f5595ae7f2bcca817266b3ad7e260dcbc7805",
+    "width": 1536
+  }
+]
