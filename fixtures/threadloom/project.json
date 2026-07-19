@@ -4,6 +4,11 @@
   "audience": "Reddit communities that enjoy daily cooperative games",
   "cta": "Play on r/threadloom_daily_dev",
   "max_duration_ms": 55000,
+  "claims": [
+    {"id": "shared-state", "statement": "An accepted stitch becomes visible shared state.", "evidence_asset_ids": ["asset-3298badac237"]},
+    {"id": "reload-proof", "statement": "The shared board persists after reload.", "evidence_asset_ids": ["asset-83c5e7f0bcbc"]},
+    {"id": "solo-play", "statement": "The game supports solo play.", "evidence_asset_ids": []}
+  ],
   "evidence": [
     {"path": "evidence/mobile-frayed.png", "purpose": "pain", "claim_ids": ["shared-risk"]},
     {"path": "evidence/live-feed.jpg", "purpose": "promise", "claim_ids": ["shared-board"]},

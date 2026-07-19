@@ -6,9 +6,9 @@ from typing import Any
 
 import typer
 
-from signalcut.editorial import build_candidates, build_storyboard, select_candidate
+from signalcut.editorial import build_candidates, build_storyboard, review_claims, select_candidate
 from signalcut.evidence import ingest_image
-from signalcut.models import EvidencePurpose, ProjectBrief
+from signalcut.models import EvidencePurpose, ProjectBrief, ProjectClaim
 
 
 app = typer.Typer(no_args_is_help=True, pretty_exceptions_show_locals=False)
@@ -48,6 +48,15 @@ def story(
     ]
     candidates = build_candidates(project, assets)
     receipt = select_candidate(project, assets, candidates)
+    claims = [
+        ProjectClaim(
+            id=item["id"],
+            statement=item["statement"],
+            evidence_asset_ids=item.get("evidence_asset_ids", []),
+        )
+        for item in source.get("claims", [])
+    ]
+    claim_ledger = review_claims(project, assets, claims)
     storyboard = build_storyboard(
         project,
         receipt,
@@ -71,6 +80,7 @@ def story(
         [candidate.model_dump(mode="json") for candidate in candidates],
     )
     _write_json(out / "selection-receipt.json", receipt.model_dump(mode="json"))
+    _write_json(out / "claim-ledger.json", claim_ledger.model_dump(mode="json"))
     _write_json(out / "storyboard.json", storyboard.model_dump(mode="json"))
     (out / "DECISION.md").write_text(
         "\n".join(
@@ -85,6 +95,21 @@ def story(
                 "The selected story is evidence-linked from start to finish. "
                 "Every beat names at least one source image, and the same inputs "
                 "produce the same result.",
+                "",
+            ]
+        )
+    )
+    (out / "PUBLISHING_DECISION.md").write_text(
+        "\n".join(
+            [
+                f"# {project.name} Claim Review",
+                "",
+                f"**Decision:** {claim_ledger.decision}",
+                f"**Evidence-linked claims:** {claim_ledger.linked_claim_count}",
+                f"**Claims needing proof:** {claim_ledger.missing_evidence_count}",
+                "",
+                "SignalCut verifies that a claim has an explicitly attached source. "
+                "It does not infer whether an image semantically proves a claim.",
                 "",
             ]
         )

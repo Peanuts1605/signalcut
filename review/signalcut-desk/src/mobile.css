@@ -47,6 +47,21 @@
     width: 100%;
     min-width: 0;
     overflow: hidden;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0;
+    padding: 0 4px;
+  }
+
+  nav button {
+    min-width: 0;
+    padding: 0 4px 10px;
+    line-height: 1.05;
+    overflow-wrap: anywhere;
   }
 
   header strong {

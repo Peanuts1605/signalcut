@@ -28,4 +28,11 @@ def test_threadloom_story_proof(tmp_path: Path) -> None:
         for scene in storyboard["scenes"]
         for path in scene["source_paths"]
     )
+    claim_ledger = json.loads((tmp_path / "claim-ledger.json").read_text())
+    assert claim_ledger["decision"] == "NEEDS_PROOF"
+    assert claim_ledger["linked_claim_count"] == 2
+    assert claim_ledger["missing_evidence_count"] == 1
+    assert claim_ledger["findings"][2]["id"] == "solo-play"
+    assert claim_ledger["findings"][2]["status"] == "needs_evidence"
     assert (tmp_path / "DECISION.md").exists()
+    assert (tmp_path / "PUBLISHING_DECISION.md").exists()

@@ -1,0 +1,146 @@
+.claim-review {
+  display: grid;
+  gap: 24px;
+}
+
+.claim-heading {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.claim-heading h2,
+.claim-heading p,
+.claim-list h3,
+.claim-list p {
+  margin: 0;
+}
+
+.claim-heading p {
+  max-width: 620px;
+  margin-top: 8px;
+  color: #56666a;
+  line-height: 1.55;
+}
+
+.claim-decision {
+  display: grid;
+  flex: 0 0 185px;
+  gap: 5px;
+  padding: 15px 16px;
+  border: 1px solid #d5d9d5;
+  background: #fff;
+}
+
+.claim-decision small,
+.claim-list small {
+  color: #6c7778;
+  font-weight: 700;
+  letter-spacing: .08em;
+  font-size: 10px;
+}
+
+.claim-decision strong {
+  font-size: 20px;
+}
+
+.claim-decision span {
+  color: #56666a;
+  font-size: 13px;
+}
+
+.claim-decision.needs-proof {
+  border-color: #d4614e;
+  background: #fff8f6;
+}
+
+.claim-decision.needs-proof strong,
+.claim-missing > .claim-status {
+  color: #b74f3e;
+}
+
+.claim-decision.ready {
+  border-color: #247f79;
+  background: #f4fbfa;
+}
+
+.claim-list {
+  display: grid;
+  gap: 12px;
+}
+
+.claim-list article {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid #d5d9d5;
+  background: #fff;
+}
+
+.claim-list article.claim-missing {
+  border-left: 4px solid #d4614e;
+}
+
+.claim-list article.claim-linked {
+  border-left: 4px solid #247f79;
+}
+
+.claim-status {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #247f79;
+  background: #eef7f6;
+}
+
+.claim-status svg {
+  width: 18px;
+}
+
+.claim-list h3 {
+  margin-top: 5px;
+  font-size: 18px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.claim-list p {
+  margin-top: 7px;
+  color: #56666a;
+  line-height: 1.5;
+}
+
+.claim-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 13px;
+}
+
+.claim-sources span {
+  padding: 5px 8px;
+  border: 1px solid #cbd8d6;
+  color: #1d625d;
+  background: #f4fbfa;
+  font: 12px ui-monospace, monospace;
+}
+
+@media (max-width: 700px) {
+  .claim-review,
+  .claim-heading,
+  .claim-list article > div {
+    min-width: 0;
+  }
+
+  .claim-heading {
+    display: grid;
+  }
+
+  .claim-decision {
+    width: auto;
+  }
+}

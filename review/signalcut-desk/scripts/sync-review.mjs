@@ -14,6 +14,7 @@ for (const name of [
   "story-candidates.json",
   "evidence-manifest.json",
   "selection-receipt.json",
+  "claim-ledger.json",
   "render-proof.json",
   "signalcut_threadloom_outcome_first.mp4",
 ]) {

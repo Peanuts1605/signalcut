@@ -15,6 +15,11 @@ class EvidencePurpose(StrEnum):
     CTA = "cta"
 
 
+class ClaimStatus(StrEnum):
+    EVIDENCE_LINKED = "evidence_linked"
+    NEEDS_EVIDENCE = "needs_evidence"
+
+
 class StoryStrategy(StrEnum):
     OUTCOME_FIRST = "outcome_first"
     WORKFLOW_FIRST = "workflow_first"
@@ -43,6 +48,36 @@ class ProjectBrief(BaseModel):
     audience: str = Field(min_length=1)
     cta: str = Field(min_length=1)
     max_duration_ms: int = Field(ge=45_000, le=60_000)
+
+
+class ProjectClaim(BaseModel):
+    """A publishing claim with the evidence the user explicitly attaches."""
+
+    model_config = ConfigDict(frozen=True)
+
+    id: str = Field(min_length=1)
+    statement: str = Field(min_length=1, max_length=180)
+    evidence_asset_ids: list[str] = Field(default_factory=list)
+
+
+class ClaimFinding(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    id: str
+    statement: str
+    status: ClaimStatus
+    evidence_asset_ids: list[str]
+    note: str
+
+
+class ClaimLedger(BaseModel):
+    model_config = ConfigDict(frozen=True)
+
+    project_name: str
+    findings: list[ClaimFinding]
+    linked_claim_count: int = Field(ge=0)
+    missing_evidence_count: int = Field(ge=0)
+    decision: str
 
 
 class StoryBeat(BaseModel):

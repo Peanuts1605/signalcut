@@ -1,0 +1,54 @@
+name: Deploy SignalCut Review Desk
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: review/signalcut-desk/package-lock.json
+      - run: uv sync --frozen
+      - run: uv run signalcut story fixtures/threadloom/project.json --out artifacts/threadloom
+      - run: npm ci
+        working-directory: render/threadloom-preview
+      - run: npm run render
+        working-directory: render/threadloom-preview
+      - run: npm run verify-render
+        working-directory: render/threadloom-preview
+      - run: npm ci
+        working-directory: review/signalcut-desk
+      - run: npm run build
+        working-directory: review/signalcut-desk
+        env:
+          VITE_BASE_PATH: /signalcut/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: review/signalcut-desk/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

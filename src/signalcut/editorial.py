@@ -5,10 +5,14 @@ import json
 from pathlib import Path
 
 from signalcut.models import (
+    ClaimFinding,
+    ClaimLedger,
+    ClaimStatus,
     ClarityFinding,
     EvidenceAsset,
     EvidencePurpose,
     ProjectBrief,
+    ProjectClaim,
     RenderStoryboard,
     SelectionReceipt,
     StoryBeat,
@@ -166,6 +170,58 @@ def select_candidate(
         clarity_score=score,
         findings=findings,
         decision="READY" if score == len(EvidencePurpose) else "REVIEW",
+    )
+
+
+def review_claims(
+    project: ProjectBrief,
+    assets: list[EvidenceAsset],
+    claims: list[ProjectClaim],
+) -> ClaimLedger:
+    """Require explicit source attachments before a publishing claim can pass."""
+
+    asset_ids = {asset.id for asset in assets}
+    seen_claim_ids: set[str] = set()
+    findings: list[ClaimFinding] = []
+
+    for claim in claims:
+        if claim.id in seen_claim_ids:
+            raise ValueError(f"duplicate claim id: {claim.id}")
+        seen_claim_ids.add(claim.id)
+        linked = [asset_id for asset_id in claim.evidence_asset_ids if asset_id in asset_ids]
+        unknown = sorted(set(claim.evidence_asset_ids) - asset_ids)
+        if linked and not unknown:
+            findings.append(
+                ClaimFinding(
+                    id=claim.id,
+                    statement=claim.statement,
+                    status=ClaimStatus.EVIDENCE_LINKED,
+                    evidence_asset_ids=linked,
+                    note="Evidence linked. Review the source before publishing.",
+                )
+            )
+        else:
+            detail = "No source attached." if not unknown else f"Unknown source: {', '.join(unknown)}."
+            findings.append(
+                ClaimFinding(
+                    id=claim.id,
+                    statement=claim.statement,
+                    status=ClaimStatus.NEEDS_EVIDENCE,
+                    evidence_asset_ids=linked,
+                    note=f"{detail} Keep this claim out of the cut until proof is attached.",
+                )
+            )
+
+    linked_claim_count = sum(
+        finding.status == ClaimStatus.EVIDENCE_LINKED for finding in findings
+    )
+    missing_evidence_count = len(findings) - linked_claim_count
+    return ClaimLedger(
+        project_name=project.name,
+        findings=findings,
+        linked_claim_count=linked_claim_count,
+        missing_evidence_count=missing_evidence_count,
+        decision="PUBLISH_READY" if missing_evidence_count == 0 else "NEEDS_PROOF",
     )
 
 
