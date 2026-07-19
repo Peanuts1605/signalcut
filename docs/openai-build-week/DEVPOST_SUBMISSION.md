@@ -8,6 +8,10 @@ SignalCut
 
 Proof before publish for product demos.
 
+## Category
+
+Developer Tools
+
 ## Short description
 
 SignalCut helps builders turn real product evidence into a short demo cut
@@ -49,6 +53,13 @@ keeps the final visual judgment with the human reviewer.
 3. See `Needs proof` with `2 linked - 1 missing`.
 4. Inspect the unsupported solo-play claim.
 5. Open **Evidence** and **Receipt** to inspect the sources and render record.
+
+## Testing instructions
+
+The live Review Desk needs no account or setup. Open
+https://peanuts1605.github.io/signalcut/, select **Claim review**, and inspect
+the deliberate solo-play evidence gap. The attached source repository includes
+the Python engine, fixture data, and local run instructions.
 
 ## Links
 
