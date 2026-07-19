@@ -1,3 +1,7 @@
+SignalCut was built with Codex and GPT five point six. Codex helped turn the
+premise into the claim review engine, review desk, adversarial tests, and this
+verified public demo.
+
 Most hackathon demos show a polished result. The risk is that a beautiful cut
 can still say more than the evidence supports.
 

@@ -3,10 +3,10 @@
 ## Artifact
 
 - File: `signalcut-openai-build-week-demo.mp4`
-- Duration: 54.0 seconds
+- Duration: 65.52 seconds
 - Video: H.264, 1440x960
 - Audio: AAC narration
-- SHA-256: `b2186bdbc893bb6675f4d54268f8264deb2986c07e1405163ddf54d554ddd14a`
+- SHA-256: `67131cd25e25098f33806885ce1b4afa31d777da802129110b6f26532f14d0ca`
 
 ## What the video proves
 
@@ -16,6 +16,8 @@
    **Needs proof**.
 4. Evidence and Receipt views expose the source screens, hashes, and render
    provenance behind the decision.
+5. The opening card and narration identify the Codex and GPT-5.6 contribution
+   to the Claim Review extension.
 
 ## Source state
 

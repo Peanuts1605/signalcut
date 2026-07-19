@@ -14,7 +14,7 @@
 - Submission copy: `docs/openai-build-week/DEVPOST_SUBMISSION.md`
 - Qualifying extension note:
   `docs/OPENAI_BUILD_WEEK_QUALIFYING_EXTENSION_2026-07-19.md`
-- Narrated demo asset (54 seconds):
+- Narrated demo asset (65.52 seconds):
   `docs/openai-build-week/signalcut-openai-build-week-demo.mp4`
 
 ## What Was Built

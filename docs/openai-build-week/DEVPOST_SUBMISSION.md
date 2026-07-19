@@ -68,4 +68,4 @@ keeps the final visual judgment with the human reviewer.
 - Public app deployment rebuilds the proof bundle, renders the preview, verifies
   the render, builds the Review Desk, and publishes GitHub Pages from one
   workflow.
-- The video demo is 54 seconds, below the contest's three-minute limit.
+- The video demo is 65.52 seconds, below the contest's three-minute limit.
