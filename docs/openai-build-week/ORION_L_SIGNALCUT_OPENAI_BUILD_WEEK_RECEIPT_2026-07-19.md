@@ -42,6 +42,7 @@ no attached source. The correct publishing decision is therefore
 - `uv run ruff check .`: passed
 - `review/signalcut-desk npm run check`: passed
 - MIT license and package metadata: present
+- MIT authorization and repository publication: commit `c25c746`
 - Public DOM check: all five tabs render; Claim Review displays `Needs proof`
   and the evidence-linked/missing decision state.
 
@@ -62,6 +63,7 @@ no attached source. The correct publishing decision is therefore
   with SHA-256 verification passed.
 - Notion pointer:
   https://app.notion.com/p/3a2b143d29178127bbfdc62f92a69e90
+- Notion pointer reconciled with the MIT update on 2026-07-19.
 - Receipt reconciliation: this patched receipt is mirrored again after the
   Drive and Notion legs were verified.
 
