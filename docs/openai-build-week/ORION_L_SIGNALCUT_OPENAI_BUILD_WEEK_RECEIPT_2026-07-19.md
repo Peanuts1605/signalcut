@@ -29,6 +29,8 @@ no attached source. The correct publishing decision is therefore
 - Commit containing public submission package: `e5b2e52`
 - Live product deployment commit: `35f1210`
 - GitHub Pages deployment run `29691763872`: passed
+- Core Build Week Codex provenance: verified `gpt-5.6-sol` session during the
+  submission period; the `/feedback` ID is still intentionally unfilled.
 - GitHub Pages home page: HTTP 200
 - Public `claim-ledger.json`: HTTP 200 and reports `NEEDS_PROOF`
 - Public proof video: HTTP 200

@@ -97,6 +97,20 @@ This extension was built with Codex during OpenAI Build Week. The submission
 includes a short narrated demo asset and will include its `/feedback` session
 ID before it is sent to judges.
 
+## How Codex and GPT-5.6 contributed
+
+The Claim Review extension was built in a dated Codex `gpt-5.6-sol` task during
+the Build Week submission period. Codex helped turn the product premise into a
+concrete data contract, build the claim-review engine and responsive Review
+Desk, add adversarial coverage for missing and unknown sources, and run the
+same proof bundle through local and GitHub Pages verification. Product
+decisions stayed explicit: SignalCut checks declared evidence links, but a
+human reviewer decides whether an image actually substantiates the claim.
+
+The submitted Devpost entry will include the `/feedback` session ID for the
+project task where the core extension was built, along with dated commit
+history and the qualifying-extension note.
+
 ## Verification
 
 Current local verification for the Claim Review extension:

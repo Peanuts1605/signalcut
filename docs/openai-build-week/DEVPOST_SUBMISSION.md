@@ -60,7 +60,11 @@ keeps the final visual judgment with the human reviewer.
 
 ## Build notes
 
-- Built with Codex during OpenAI Build Week.
+- Built with Codex and GPT-5.6 during OpenAI Build Week. Codex was used to
+  shape the claim/evidence contract, implement the engine and Review Desk,
+  develop the adversarial tests, and verify the public deployment.
+- The required `/feedback` session ID will be entered from the project task
+  where the core Claim Review extension was built.
 - Public app deployment rebuilds the proof bundle, renders the preview, verifies
   the render, builds the Review Desk, and publishes GitHub Pages from one
   workflow.
