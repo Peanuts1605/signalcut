@@ -99,7 +99,7 @@ ID before it is sent to judges.
 
 ## How Codex and GPT-5.6 contributed
 
-The Claim Review extension was built in a dated Codex `gpt-5.6-sol` task during
+The Claim Review extension was built in a dated Codex `gpt-5.6-terra` task during
 the Build Week submission period. Codex helped turn the product premise into a
 concrete data contract, build the claim-review engine and responsive Review
 Desk, add adversarial coverage for missing and unknown sources, and run the
