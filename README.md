@@ -125,3 +125,7 @@ Current local verification for the Claim Review extension:
 See [the demo script](docs/openai-build-week/DEMO_SCRIPT.md) and
 [submission checklist](docs/openai-build-week/SUBMISSION_CHECKLIST.md) for the
 judge path and remaining live-submission steps.
+
+## License
+
+SignalCut is released under the [MIT License](LICENSE).

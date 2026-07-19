@@ -11,6 +11,7 @@
 
 - Live Review Desk: https://peanuts1605.github.io/signalcut/
 - Public repository: https://github.com/Peanuts1605/signalcut
+- Repository license: MIT
 - Submission copy: `docs/openai-build-week/DEVPOST_SUBMISSION.md`
 - Qualifying extension note:
   `docs/OPENAI_BUILD_WEEK_QUALIFYING_EXTENSION_2026-07-19.md`
@@ -40,6 +41,7 @@ no attached source. The correct publishing decision is therefore
 - `uv run pytest -q`: 12 passed
 - `uv run ruff check .`: passed
 - `review/signalcut-desk npm run check`: passed
+- MIT license and package metadata: present
 - Public DOM check: all five tabs render; Claim Review displays `Needs proof`
   and the evidence-linked/missing decision state.
 

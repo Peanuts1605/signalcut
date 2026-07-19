@@ -65,6 +65,7 @@ the Python engine, fixture data, and local run instructions.
 
 - Live app: https://peanuts1605.github.io/signalcut/
 - Source repository: https://github.com/Peanuts1605/signalcut
+- License: MIT
 - Demo video: upload `signalcut-openai-build-week-demo.mp4` to public YouTube,
   then paste its URL here and in Devpost.
 - Build Week `/feedback` session ID: add the returned ID here and in Devpost.
