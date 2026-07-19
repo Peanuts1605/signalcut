@@ -17,6 +17,7 @@
   `docs/OPENAI_BUILD_WEEK_QUALIFYING_EXTENSION_2026-07-19.md`
 - Narrated demo asset (65.52 seconds):
   `docs/openai-build-week/signalcut-openai-build-week-demo.mp4`
+- Public YouTube demo: https://youtu.be/DNU_VUibU24
 
 ## What Was Built
 
@@ -36,6 +37,8 @@ no attached source. The correct publishing decision is therefore
 - GitHub Pages home page: HTTP 200
 - Public `claim-ledger.json`: HTTP 200 and reports `NEEDS_PROOF`
 - Public proof video: HTTP 200
+- Public YouTube upload: published from the Naumio channel; copyright check
+  completed with no issues.
 - Current narrated demo SHA-256:
   `67131cd25e25098f33806885ce1b4afa31d777da802129110b6f26532f14d0ca`
 - `uv run pytest -q`: 12 passed
@@ -48,13 +51,11 @@ no attached source. The correct publishing decision is therefore
 
 ## Remaining Personal Submission Steps
 
-1. Join the OpenAI Build Week Devpost event and complete any personal
-   eligibility/CAPTCHA fields.
-2. Upload the narrated MP4 to a public YouTube URL and paste that URL into the
-   Devpost form and the submission note.
-3. Run `/feedback` from the Codex build session and paste the returned session
+1. On the open Devpost registration screen, personally acknowledge the
+   eligibility requirements and Official Rules, then register.
+2. Run `/feedback` from the Codex build session and paste the returned session
    ID into Devpost.
-4. Use `docs/openai-build-week/DEVPOST_SUBMISSION.md` for the title,
+3. Use `docs/openai-build-week/DEVPOST_SUBMISSION.md` for the title,
    description, and links, then submit.
 
 ## Shared Proof Reconciliation
