@@ -1,0 +1,21 @@
+Most hackathon demos show a polished result. The risk is that a beautiful cut
+can still say more than the evidence supports.
+
+SignalCut turns that into a reviewable decision before anything goes public.
+
+This Threadloom demo has three claims. The first is linked to a real
+shared-state screen. The second points to a persisted-feed screen. Both are
+inspectable.
+
+The third says the game supports solo play. No source is attached, so
+SignalCut marks it Needs evidence and blocks the publishing decision with
+Needs proof. No false green light.
+
+This is deliberately modest. SignalCut verifies an explicit link. It does not
+claim an image automatically proves a sentence. A person reviews the source
+and decides whether the claim belongs in the cut.
+
+The evidence tab keeps the original screens and hashes visible. The receipt
+connects the evidence, chosen story, and rendered video.
+
+SignalCut keeps a demo honest when polish starts outrunning proof.
