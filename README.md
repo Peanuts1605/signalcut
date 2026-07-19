@@ -9,6 +9,13 @@ public.
 
 ![SignalCut Claim Review](docs/openai-build-week/signalcut-claim-review-desktop.png)
 
+## Try it
+
+Open the live [SignalCut Review Desk](https://peanuts1605.github.io/signalcut/),
+select **Claim review**, and inspect the intentionally unsupported solo-play
+claim. The page is generated, rendered, and published by the same GitHub
+workflow used for the included proof bundle.
+
 ## The problem
 
 A polished demo can be assembled from real screenshots while still saying more
@@ -87,8 +94,8 @@ scope is documented in
 [the qualifying-extension note](docs/OPENAI_BUILD_WEEK_QUALIFYING_EXTENSION_2026-07-19.md).
 
 This extension was built with Codex during OpenAI Build Week. The submission
-will include its `/feedback` session ID and a short, narrated public demo video
-before it is sent to judges.
+includes a short narrated demo asset and will include its `/feedback` session
+ID before it is sent to judges.
 
 ## Verification
 

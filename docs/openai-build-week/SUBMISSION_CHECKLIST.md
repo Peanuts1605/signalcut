@@ -13,9 +13,10 @@
 ## Before final Devpost submission
 
 - [ ] Join the Build Week hackathon in Devpost
-- [ ] Commit and push the July 19 extension to a public reviewer repository
-- [ ] Deploy the Review Desk or provide a reviewer-accessible test build
-- [ ] Record the narrated public YouTube demo under three minutes
+- [x] Commit and push the July 19 extension to a public reviewer repository
+- [x] Deploy the Review Desk at https://peanuts1605.github.io/signalcut/
+- [x] Record the 54-second narrated demo asset
+- [ ] Upload the demo to a public YouTube URL
 - [ ] Run `/feedback` from the Codex build session and add the returned session
   ID to the Devpost form
 - [ ] Add the public repo URL, demo URL, and video URL to Devpost
