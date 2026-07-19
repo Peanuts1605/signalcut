@@ -65,6 +65,7 @@ no attached source. The correct publishing decision is therefore
 - Notion pointer:
   https://app.notion.com/p/3a2b143d29178127bbfdc62f92a69e90
 - Notion pointer reconciled with the MIT update on 2026-07-19.
+- Notion pointer reconciled with the public demo URL on 2026-07-19.
 - Receipt reconciliation: this patched receipt is mirrored again after the
   Drive and Notion legs were verified.
 
