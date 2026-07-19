@@ -20,11 +20,6 @@ for (const name of [
 ]) {
   await copyFile(path.join(artifactRoot, name), path.join(destination, name));
 }
-await copyFile(
-  path.join(artifactRoot, "proof-stills", "scene-01.jpg"),
-  path.join(destination, "preview-poster.jpg"),
-);
-
 const evidence = JSON.parse(await readFile(path.join(artifactRoot, "evidence-manifest.json")));
 for (const asset of evidence) {
   await copyFile(
@@ -32,4 +27,13 @@ for (const asset of evidence) {
     path.join(destination, asset.local_path),
   );
 }
+const storyboard = JSON.parse(await readFile(path.join(artifactRoot, "storyboard.json")));
+const posterSource = storyboard.scenes[0]?.source_paths[0];
+if (!posterSource) {
+  throw new Error("storyboard needs a first-scene source for the preview poster");
+}
+await copyFile(
+  path.join(destination, posterSource),
+  path.join(destination, "preview-poster.jpg"),
+);
 process.stdout.write(`synced ${evidence.length} evidence assets\n`);
