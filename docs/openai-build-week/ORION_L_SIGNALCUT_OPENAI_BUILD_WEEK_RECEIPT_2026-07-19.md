@@ -26,7 +26,8 @@ no attached source. The correct publishing decision is therefore
 
 ## Verification
 
-- Latest public submission-package commit: `537ff32`
+- Public submission package: `main` branch of
+  https://github.com/Peanuts1605/signalcut
 - Live product deployment commit: `35f1210`
 - GitHub Pages deployment run `29691763872`: passed
 - Core Build Week Codex provenance: verified `gpt-5.6-terra` session during the
