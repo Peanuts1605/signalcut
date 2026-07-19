@@ -26,7 +26,7 @@ no attached source. The correct publishing decision is therefore
 
 ## Verification
 
-- Commit containing public submission package: `e5b2e52`
+- Latest public submission-package commit: `537ff32`
 - Live product deployment commit: `35f1210`
 - GitHub Pages deployment run `29691763872`: passed
 - Core Build Week Codex provenance: verified `gpt-5.6-sol` session during the
@@ -34,6 +34,8 @@ no attached source. The correct publishing decision is therefore
 - GitHub Pages home page: HTTP 200
 - Public `claim-ledger.json`: HTTP 200 and reports `NEEDS_PROOF`
 - Public proof video: HTTP 200
+- Current narrated demo SHA-256:
+  `67131cd25e25098f33806885ce1b4afa31d777da802129110b6f26532f14d0ca`
 - `uv run pytest -q`: 12 passed
 - `uv run ruff check .`: passed
 - `review/signalcut-desk npm run check`: passed
