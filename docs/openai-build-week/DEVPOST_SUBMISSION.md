@@ -10,7 +10,7 @@ Proof before publish for product demos.
 
 ## Category
 
-Developer Tools
+Work & Productivity
 
 ## Short description
 
@@ -67,15 +67,17 @@ the Python engine, fixture data, and local run instructions.
 - Source repository: https://github.com/Peanuts1605/signalcut
 - License: MIT
 - Demo video: https://youtu.be/DNU_VUibU24
-- Build Week `/feedback` session ID: add the returned ID here and in Devpost.
+- Build Week `/feedback` session ID:
+  `019ee0dc-d43c-7160-82ca-0cf8120952a8`.
 
 ## Build notes
 
 - Built with Codex and GPT-5.6 during OpenAI Build Week. Codex was used to
   shape the claim/evidence contract, implement the engine and Review Desk,
   develop the adversarial tests, and verify the public deployment.
-- The required `/feedback` session ID will be entered from the project task
-  where the core Claim Review extension was built.
+- The required `/feedback` session ID is from the exact project task where the
+  core Claim Review extension was built:
+  `019ee0dc-d43c-7160-82ca-0cf8120952a8`.
 - Public app deployment rebuilds the proof bundle, renders the preview, verifies
   the render, builds the Review Desk, and publishes GitHub Pages from one
   workflow.

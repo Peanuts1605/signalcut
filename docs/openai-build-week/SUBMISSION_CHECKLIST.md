@@ -12,15 +12,25 @@
 
 ## Before final Devpost submission
 
-- [ ] Join the Build Week hackathon in Devpost
+- [x] Join the Build Week hackathon in Devpost as `Peanuts1605`
 - [x] Commit and push the July 19 extension to a public reviewer repository
 - [x] Deploy the Review Desk at https://peanuts1605.github.io/signalcut/
-- [x] Record the 54-second narrated demo asset
-- [ ] Upload the demo to a public YouTube URL
-- [ ] Run `/feedback` from the Codex build session and add the returned session
-  ID to the Devpost form
-- [ ] Add the public repo URL, demo URL, and video URL to Devpost
-- [ ] Complete personal eligibility and CAPTCHA steps in Devpost if prompted
+- [x] Record the 65.52-second narrated demo asset
+- [x] Publish the demo to https://youtu.be/DNU_VUibU24
+- [x] Clear Devpost's visual reCAPTCHA and create the SignalCut draft.
+- [x] Save the title, elevator pitch, public project story, live app URL, and
+  public video URL in the Devpost draft.
+- [x] Save the **Work & Productivity** track, public repository URL, and
+  judge test instructions in Devpost Additional Info.
+- [ ] Complete the remaining personal eligibility declarations: submitter type
+  and country of residence.
+- [x] Run `/feedback` in the exact Codex Claim Review task and capture the
+  primary session ID `019ee0dc-d43c-7160-82ca-0cf8120952a8`.
+- [ ] Save that exact session ID in the Devpost Additional Info field; do not
+  final-submit from that edit.
+- [x] Add the live app and public video URLs to the Devpost project details
+- [ ] Accept the Official Rules and Devpost Terms, then submit the final
+  Devpost form.
 
 ## Judge click path
 

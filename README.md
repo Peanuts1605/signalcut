@@ -94,8 +94,8 @@ scope is documented in
 [the qualifying-extension note](docs/OPENAI_BUILD_WEEK_QUALIFYING_EXTENSION_2026-07-19.md).
 
 This extension was built with Codex during OpenAI Build Week. The submission
-includes a short narrated demo asset and will include its `/feedback` session
-ID before it is sent to judges.
+includes a short narrated demo asset and the primary-task `/feedback` session
+ID `019ee0dc-d43c-7160-82ca-0cf8120952a8`.
 
 ## How Codex and GPT-5.6 contributed
 
@@ -107,9 +107,9 @@ same proof bundle through local and GitHub Pages verification. Product
 decisions stayed explicit: SignalCut checks declared evidence links, but a
 human reviewer decides whether an image actually substantiates the claim.
 
-The submitted Devpost entry will include the `/feedback` session ID for the
-project task where the core extension was built, along with dated commit
-history and the qualifying-extension note.
+The submitted Devpost entry uses the `/feedback` session ID for the project
+task where the core extension was built, along with dated commit history and
+the qualifying-extension note.
 
 ## Verification
 
