@@ -26,8 +26,8 @@
   and country of residence.
 - [x] Run `/feedback` in the exact Codex Claim Review task and capture the
   primary session ID `019ee0dc-d43c-7160-82ca-0cf8120952a8`.
-- [ ] Save that exact session ID in the Devpost Additional Info field; do not
-  final-submit from that edit.
+- [x] Save that exact session ID in the Devpost Additional Info field and
+  verify it after reload; the final-submit step remains untouched.
 - [x] Add the live app and public video URLs to the Devpost project details
 - [ ] Accept the Official Rules and Devpost Terms, then submit the final
   Devpost form.

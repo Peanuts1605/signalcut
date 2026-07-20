@@ -20,7 +20,8 @@ built. The correct reference is the exact primary provider task recorded above.
 ## Exact Recovery Move
 
 1. Reopen the SignalCut Additional Info draft.
-2. Save `019ee0dc-d43c-7160-82ca-0cf8120952a8` in the `/feedback` field.
+2. Confirm `019ee0dc-d43c-7160-82ca-0cf8120952a8` remains in the `/feedback`
+   field; direct save-and-reload verification passed on 2026-07-20.
 3. Leave final submission untouched until the entrant declarations are complete.
 
 **Devpost field:** https://devpost.com/submit-to/30223-openai-build-week/manage/submissions/1105968-signalcut/additional-info/edit

@@ -41,9 +41,7 @@
 ## Remaining Exact Owner Actions
 
 1. Select the accurate submitter type and country of residence in Devpost.
-2. Save the exact primary Claim Review reference
-   `019ee0dc-d43c-7160-82ca-0cf8120952a8` in Devpost Additional Info.
-3. On Devpost finalization, personally accept the Official Rules and Devpost
+2. On Devpost finalization, personally accept the Official Rules and Devpost
    Terms, then choose **Submit project**.
 
 ## Shared Proof Reconciliation

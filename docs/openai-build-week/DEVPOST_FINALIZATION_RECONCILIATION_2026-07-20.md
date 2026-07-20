@@ -14,9 +14,9 @@
 - Public video: https://youtu.be/DNU_VUibU24
 - `/feedback` session ID: `019ee0dc-d43c-7160-82ca-0cf8120952a8`. This is the
   exact provider task that contains the SignalCut Claim Review build record.
-  The previously entered X/Instagram scout reference was removed after
-  save-and-reload verification. The saved Devpost field was blank at that
-  readback and has not been final-submitted.
+  The previously entered X/Instagram scout reference was removed. This exact
+  primary-task value was then saved and reloaded from Devpost. The project has
+  not been final-submitted.
 - Judge path is present: open the Review Desk, select **Claim review**, inspect
   the deliberate unsupported solo-play claim, then inspect **Evidence** and
   **Receipt**. No account or setup is required.
@@ -50,6 +50,5 @@ improvement only and does not block eligibility or final submission.
 ## Decision
 
 **PRIMARY_TASK_REFERENCE_READY.** Only
-`019ee0dc-d43c-7160-82ca-0cf8120952a8` may be entered for SignalCut. The next
-Devpost edit may save that reference, but it must not final-submit the project;
-entrant declarations and acceptance remain personal actions.
+`019ee0dc-d43c-7160-82ca-0cf8120952a8` is saved for SignalCut. Entrant
+declarations and acceptance remain personal actions before final submission.
