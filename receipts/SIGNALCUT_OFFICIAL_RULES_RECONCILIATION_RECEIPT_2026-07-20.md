@@ -40,7 +40,9 @@ submitted these personal/legal fields.
 - Notion pointer: https://app.notion.com/p/3a4b143d291781f28e8dc4b9b6b82c88
   - Saved in `TMN Receipts Ledger` with the verified Drive path, exact provider
     task, `Orion(Leo)`, and `Leo Lounge`.
-- Reconciled receipt mirror: pending final hash-verified copy after this patch.
+- Reconciled receipt mirror: completed as a hash-verified suffixed copy in the
+  same Drive delivery folder. The helper preserves the initial receipt rather
+  than replacing its historical version.
 
 ## Blockers
 
