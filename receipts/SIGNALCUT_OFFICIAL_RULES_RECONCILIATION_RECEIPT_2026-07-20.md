@@ -35,9 +35,12 @@ submitted these personal/legal fields.
 
 ## Shared Proof Reconciliation
 
-- Drive mirror: pending
-- Notion pointer: pending
-- Reconciled receipt mirror: pending
+- Drive mirror: `TMN_NAUMIO_HQ/06_DELIVERY/SIGNALCUT-OFFICIAL-RULES-RECONCILIATION-2026-07-20/`
+  - Initial mirror verified the decision note and this receipt with SHA-256.
+- Notion pointer: https://app.notion.com/p/3a4b143d291781f28e8dc4b9b6b82c88
+  - Saved in `TMN Receipts Ledger` with the verified Drive path, exact provider
+    task, `Orion(Leo)`, and `Leo Lounge`.
+- Reconciled receipt mirror: pending final hash-verified copy after this patch.
 
 ## Blockers
 
