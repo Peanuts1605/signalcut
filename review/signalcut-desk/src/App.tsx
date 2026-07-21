@@ -35,6 +35,7 @@ export function App() {
 
   const candidate = useMemo(()=>data?.candidates.find(item=>item.strategy===strategy),[data,strategy]);
   if (!data) return <main className="loading">Opening the cut…</main>;
+  const reviewUrl = new URL(import.meta.env.BASE_URL, window.location.origin).href;
   const seek = (index:number) => { const seconds=data.storyboard.scenes.slice(0,index).reduce((sum,s)=>sum+s.duration_ms,0)/1000; if(video.current){video.current.currentTime=seconds; void video.current.play(); setPlaying(true);} };
   const togglePlay = () => { if(!video.current)return; if(video.current.paused){void video.current.play();setPlaying(true);}else{video.current.pause();setPlaying(false);} };
   const share = ()=>setShared(value=>!value);
@@ -47,7 +48,7 @@ export function App() {
       <div className="aside-foot"><span className="avatar">SC</span><div><strong>SignalCut</strong><small>Review desk</small></div></div>
     </aside>
     <main>
-      <header><div><strong>Threadloom Daily Demo</strong><span>r/threadloom_daily_dev</span></div>{shared&&<output className="review-url">http://127.0.0.1:4173</output>}<button className="share" onClick={share}>{shared?<Check size={18}/>:<Share2 size={18}/>} {shared?"Hide review link":"Show review link"}</button></header>
+      <header><div><strong>Threadloom Daily Demo</strong><span>r/threadloom_daily_dev</span></div>{shared&&<output className="review-url">{reviewUrl}</output>}<button className="share" onClick={share}>{shared?<Check size={18}/>:<Share2 size={18}/>} {shared?"Hide review link":"Show review link"}</button></header>
       <nav>{tabs.map(item=><button className={tab===item?"active":""} onClick={()=>{if(item==="Preview")setStrategy("outcome_first");setTab(item)}} key={item}>{item}</button>)}</nav>
       <section className="workspace">
         {tab==="Preview" && <Preview data={data} playing={playing} muted={muted} video={video} togglePlay={togglePlay} setMuted={setMuted} seek={seek} />}
