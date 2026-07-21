@@ -33,9 +33,15 @@ The live post-deploy replay confirmed that **Show review link** displays
 
 ## Shared Proof Reconciliation
 
-- Drive mirror: pending
-- Notion pointer: pending
-- Reconciled receipt mirror: pending
+- Drive mirror: `TMN_NAUMIO_HQ/06_DELIVERY/SIGNALCUT-PUBLIC-REVIEW-URL-FIX-2026-07-21/`
+  - Initial mirror verified with SHA-256 for the decision note, receipt, and
+    patched source file.
+- Notion pointer: https://app.notion.com/p/3a4b143d29178152af90eb51c46a7991
+  - Saved in `TMN Receipts Ledger` with the Drive path, public URL, commit,
+    exact provider task, `Orion(Leo)`, and `Leo Lounge`.
+- Reconciled receipt mirror: verified in the same Drive delivery folder; the
+  helper preserved the original mirror and added a hash-verified reconciled
+  copy after the Drive and Notion links were recorded here.
 
 ## Blockers
 
