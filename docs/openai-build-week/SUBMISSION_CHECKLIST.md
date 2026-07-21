@@ -22,8 +22,9 @@
   public video URL in the Devpost draft.
 - [x] Save the **Work & Productivity** track, public repository URL, and
   judge test instructions in Devpost Additional Info.
-- [ ] Complete the remaining personal eligibility declarations: submitter type
-  and country of residence.
+- [x] Save the **Individual** submitter type in the Devpost draft.
+- [ ] Complete the remaining personal eligibility declaration: truthful country
+  of residence.
 - [x] Run `/feedback` in the exact Codex Claim Review task and capture the
   primary session ID `019ee0dc-d43c-7160-82ca-0cf8120952a8`.
 - [x] Save that exact session ID in the Devpost Additional Info field and
